@@ -1,0 +1,15 @@
+column_dtypes:
+  chunk: &id001 !!python/name:meerkat.columns.scalar.pandas.PandasScalarColumn ''
+  chunk_id: *id001
+  chunk_idx: *id001
+  embeddings/cohere/large: &id002 !!python/name:meerkat.columns.tensor.numpy.NumPyTensorColumn ''
+  embeddings/cohere/small: *id002
+  embeddings/openai/text-embedding-ada-002: *id002
+  file_id: *id001
+  filename: *id001
+  ntokens: *id001
+  similarity: *id002
+dtype: !!python/name:meerkat.dataframe.DataFrame ''
+len: 1380
+state:
+  _primary_key: chunk_id

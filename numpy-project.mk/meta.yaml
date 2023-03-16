@@ -1,0 +1,12 @@
+column_dtypes:
+  chunks: !!python/name:meerkat.columns.object.base.ObjectColumn ''
+  extension: &id001 !!python/name:meerkat.columns.scalar.pandas.PandasScalarColumn ''
+  file_id: *id001
+  filename: *id001
+  files: !!python/name:meerkat.columns.deferred.file.FileColumn ''
+  nchars: *id001
+  ntokens: *id001
+dtype: !!python/name:meerkat.dataframe.DataFrame ''
+len: 1932
+state:
+  _primary_key: file_id

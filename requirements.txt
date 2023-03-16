@@ -1,0 +1,5 @@
+meerkat-ml
+tiktoken
+openai
+cohere
+gitpython

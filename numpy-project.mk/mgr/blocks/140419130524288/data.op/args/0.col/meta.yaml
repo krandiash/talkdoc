@@ -1,0 +1,36 @@
+dtype: !!python/name:meerkat.columns.scalar.pandas.PandasScalarColumn ''
+len: 1932
+state:
+  _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+  _formatters: !FormatterGroup
+    class: !!python/name:meerkat.interactive.formatter.text.TextFormatterGroup ''
+    dict:
+      base: !Formatter
+        class: &id001 !!python/name:meerkat.interactive.formatter.text.TextFormatter ''
+        state:
+          classes: ''
+      gallery: !Formatter
+        class: *id001
+        state:
+          classes: aspect-video h-full p-2
+      icon: !Formatter
+        class: !!python/name:meerkat.interactive.formatter.icon.IconFormatter ''
+        state:
+          _props:
+            name: FileEarmarkFont
+      small: !Formatter
+        class: *id001
+        state:
+          classes: ''
+      tag: !Formatter
+        class: *id001
+        state:
+          classes: 'whitespace-nowrap text-ellipsis overflow-hidden text-right '
+      thumbnail: !Formatter
+        class: *id001
+        state:
+          classes: ''
+      tiny: !Formatter
+        class: *id001
+        state:
+          classes: ''
