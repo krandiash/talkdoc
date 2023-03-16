@@ -1,15 +1,15 @@
 # 🎙️ talkdoc
 
-<video src="https://user-images.githubusercontent.com/10166085/225598887-808a5e03-c36f-43a3-912e-e829ec713608.mov" controls="controls" autoplay loop="loop" style="max-width: 730px;">
-</video>
-
-<video src="https://user-images.githubusercontent.com/10166085/225599063-7c0419cc-5b7a-4d02-8536-c205213b650d.mov" controls="controls" autoplay loop="loop" style="max-width: 730px;">
-</video>
-
 Point to a Github repo, and get an index that you can use for asking
 questions about the code.
 
 Built with 🚀 [Meerkat](http://meerkat.wiki).
+
+<video src="https://user-images.githubusercontent.com/10166085/225598887-808a5e03-c36f-43a3-912e-e829ec713608.mov" controls="controls" autoplay loop="loop" style="max-width: 400px;">
+</video>
+
+<video src="https://user-images.githubusercontent.com/10166085/225599063-7c0419cc-5b7a-4d02-8536-c205213b650d.mov" controls="controls" autoplay loop="loop" style="max-width: 400px;">
+</video>
 
 ```bash
 git clone https://github.com/krandiash/talkdoc.git
