@@ -3,7 +3,7 @@
 Point to a Github repo, and get an index that you can use for asking
 questions about the code.
 
-Built with 🚀 [Meerkat](http://meerkat.wiki).
+Built with 🚀 [Meerkat](https://github.com/hazyresearch/meerkat).
 
 <video src="https://user-images.githubusercontent.com/10166085/225598887-808a5e03-c36f-43a3-912e-e829ec713608.mov" controls="controls" autoplay loop="loop" style="max-width: 400px;">
 </video>
