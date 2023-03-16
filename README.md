@@ -1,5 +1,11 @@
 # 🎙️ talkdoc
 
+<video src="static/recording-guardrails.mov" controls="controls" autoplay loop="loop" style="max-width: 730px;">
+</video>
+
+<video src="static/recording-meerkat.mov" controls="controls" autoplay loop="loop" style="max-width: 730px;">
+</video>
+
 Point to a Github repo, and get an index that you can use for asking
 questions about the code.
 

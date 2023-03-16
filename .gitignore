@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 meerkat/
+.DS_Store
