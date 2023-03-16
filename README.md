@@ -11,6 +11,8 @@ Built with 🚀 [Meerkat](https://github.com/hazyresearch/meerkat).
 <video src="https://user-images.githubusercontent.com/10166085/225599063-7c0419cc-5b7a-4d02-8536-c205213b650d.mov" controls="controls" autoplay loop="loop" style="max-width: 400px;">
 </video>
 
+To get started,
+
 ```bash
 git clone https://github.com/krandiash/talkdoc.git
 conda create -n talkdoc python=3.9
