@@ -27,6 +27,7 @@ def get_files_in_repo(repo_path: str) -> list:
     Only files that are tracked by Git are returned.
     """
     # Create a Git repository object
+    print(f"Loading Git repository at {repo_path}")
     repo = git.Repo(repo_path)
 
     # Get the list of files of interest
@@ -357,7 +358,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # If the repo is a URL, clone it
-    repo_name = os.path.basename(args.repo)
+    repo_name = os.path.basename(args.repo).replace(".git", "")
     print(f"Using repo {repo_name}")
 
     if os.path.exists(f"./{repo_name}-project.mk"):
@@ -373,7 +374,7 @@ if __name__ == "__main__":
 
             # Point the repo to the local path
             args.repo = os.getcwd() + "/" + repo_name
-    
+
         project, chunks = main(args.repo, model=args.model)
         project.write(f"./{repo_name}-project.mk")
         chunks.write(f"./{repo_name}-chunks.mk")
