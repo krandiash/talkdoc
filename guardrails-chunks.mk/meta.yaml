@@ -1,0 +1,12 @@
+column_dtypes:
+  chunk: &id001 !!python/name:meerkat.columns.scalar.pandas.PandasScalarColumn ''
+  chunk_id: *id001
+  chunk_idx: *id001
+  embeddings/openai/text-embedding-ada-002: !!python/name:meerkat.columns.tensor.numpy.NumPyTensorColumn ''
+  file_id: *id001
+  filename: *id001
+  ntokens: *id001
+dtype: !!python/name:meerkat.dataframe.DataFrame ''
+len: 146
+state:
+  _primary_key: chunk_id

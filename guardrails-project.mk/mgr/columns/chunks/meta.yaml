@@ -1,0 +1,11 @@
+dtype: !!python/name:meerkat.columns.object.base.ObjectColumn ''
+len: 44
+state:
+  _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+  _formatters: !FormatterGroup
+    class: !!python/name:meerkat.interactive.formatter.base.FormatterGroup ''
+    dict:
+      base: !Formatter
+        class: !!python/name:meerkat.interactive.formatter.text.TextFormatter ''
+        state:
+          classes: ''

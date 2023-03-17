@@ -1,0 +1,235 @@
+dtype: !!python/name:meerkat.block.manager.BlockManager ''
+columns:
+  chunk_idx:
+    dtype: &id001 !!python/name:meerkat.columns.scalar.pandas.PandasScalarColumn ''
+    len: 146
+    state:
+      _formatters: !FormatterGroup
+        class: &id004 !!python/name:meerkat.interactive.formatter.number.NumberFormatterGroup ''
+        dict:
+          base: !Formatter
+            class: &id005 !!python/name:meerkat.interactive.formatter.number.NumberFormatter ''
+            state:
+              dtype: int
+              precision: 3
+              percentage: false
+              classes: ''
+          icon: !Formatter
+            class: &id002 !!python/name:meerkat.interactive.formatter.icon.IconFormatter ''
+            state:
+              _props:
+                name: Hash
+      _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+    block:
+      block_dir: blocks/140206020544880
+      block_index: chunk_idx
+      mmap: false
+  filename:
+    dtype: *id001
+    len: 146
+    state:
+      _formatters: !FormatterGroup
+        class: &id006 !!python/name:meerkat.interactive.formatter.text.TextFormatterGroup ''
+        dict:
+          base: !Formatter
+            class: &id003 !!python/name:meerkat.interactive.formatter.text.TextFormatter ''
+            state:
+              classes: ''
+          icon: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: FileEarmarkFont
+          tiny: !Formatter
+            class: *id003
+            state:
+              classes: ''
+          small: !Formatter
+            class: *id003
+            state:
+              classes: ''
+          thumbnail: !Formatter
+            class: *id003
+            state:
+              classes: ''
+          gallery: !Formatter
+            class: *id003
+            state:
+              classes: aspect-video h-full p-2
+          tag: !Formatter
+            class: *id003
+            state:
+              classes: 'whitespace-nowrap text-ellipsis overflow-hidden text-right '
+      _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+    block:
+      block_dir: blocks/140206020544880
+      block_index: filename
+      mmap: false
+  file_id:
+    dtype: *id001
+    len: 146
+    state:
+      _formatters: !FormatterGroup
+        class: *id004
+        dict:
+          base: !Formatter
+            class: *id005
+            state:
+              dtype: int
+              precision: 3
+              percentage: false
+              classes: ''
+          icon: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: Hash
+      _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+    block:
+      block_dir: blocks/140206020544880
+      block_index: file_id
+      mmap: false
+  chunk_id:
+    dtype: *id001
+    len: 146
+    state:
+      _formatters: !FormatterGroup
+        class: *id004
+        dict:
+          base: !Formatter
+            class: *id005
+            state:
+              dtype: int
+              precision: 3
+              percentage: false
+              classes: ''
+          icon: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: Hash
+      _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+    block:
+      block_dir: blocks/140206020544880
+      block_index: chunk_id
+      mmap: false
+  chunk:
+    dtype: *id001
+    len: 146
+    state:
+      _formatters: !FormatterGroup
+        class: *id006
+        dict:
+          base: !Formatter
+            class: &id007 !!python/name:meerkat.interactive.formatter.code.CodeFormatter ''
+            state:
+              _props:
+                theme: okaidia
+                background: bg-slate-800
+                language: python
+                classes: ''
+          icon: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: CodeSquare
+          tiny: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: CodeSquare
+          small: !Formatter
+            class: *id003
+            state:
+              classes: ''
+          thumbnail: !Formatter
+            class: *id007
+            state:
+              _props:
+                theme: okaidia
+                background: bg-slate-800
+                language: python
+                classes: ''
+          gallery: !Formatter
+            class: *id007
+            state:
+              _props:
+                classes: h-full aspect-video
+                theme: okaidia
+                background: bg-slate-800
+                language: python
+          tag: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: CodeSquare
+          full: !Formatter
+            class: *id007
+            state:
+              _props:
+                classes: h-full w-ful rounded-lg
+                theme: okaidia
+                background: bg-slate-800
+                language: python
+      _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+    block:
+      block_dir: blocks/140206020544880
+      block_index: chunk
+      mmap: false
+  ntokens:
+    dtype: *id001
+    len: 146
+    state:
+      _formatters: !FormatterGroup
+        class: *id004
+        dict:
+          base: !Formatter
+            class: *id005
+            state:
+              dtype: int
+              precision: 3
+              percentage: false
+              classes: ''
+          icon: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: Hash
+      _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+    block:
+      block_dir: blocks/140206020544880
+      block_index: ntokens
+      mmap: false
+  embeddings/openai/text-embedding-ada-002:
+    dtype: !!python/name:meerkat.columns.tensor.numpy.NumPyTensorColumn ''
+    len: 146
+    state:
+      _formatters: !FormatterGroup
+        class: !!python/name:meerkat.interactive.formatter.tensor.TensorFormatterGroup ''
+        dict:
+          base: !Formatter
+            class: !!python/name:meerkat.interactive.formatter.tensor.TensorFormatter ''
+            state:
+              _props:
+                dtype: float64
+          icon: !Formatter
+            class: *id002
+            state:
+              _props:
+                name: BoxFill
+      _collate_fn: !!python/name:meerkat.mixins.collate.identity_collate ''
+    block:
+      block_dir: blocks/140206355760032
+      block_index:
+        start: 0
+        stop: 1536
+        step: 1
+      mmap: false
+_column_order:
+- chunk_idx
+- filename
+- file_id
+- chunk_id
+- chunk
+- ntokens
+- embeddings/openai/text-embedding-ada-002

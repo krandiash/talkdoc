@@ -1,0 +1,16 @@
+args:
+- args/0.col
+kwargs: {}
+state:
+  batch_size: 1
+  fn: !PickledObject
+    class: !!python/name:meerkat.columns.deferred.file.FileLoader ''
+    pickle: !!binary |
+      gASVzwAAAAAAAACMHW1lZXJrYXQuY29sdW1ucy5kZWZlcnJlZC5maWxllIwKRmlsZUxvYWRlcpST
+      lCmBlH2UKIwGbG9hZGVylGgAjAlsb2FkX3RleHSUk5SMCGJhc2VfZGlylIw+L1VzZXJzL2tyYW5k
+      aWFzaC9EZXNrdG9wL3dvcmtzcGFjZS9wcm9qZWN0cy90YWxrZG9jL2d1YXJkcmFpbHOUjApkb3du
+      bG9hZGVylE6ME2ZhbGxiYWNrX2Rvd25sb2FkZXKUTowJY2FjaGVfZGlylE51Yi4=
+  is_batched_fn: false
+  materialize_inputs: true
+  return_format: null
+  return_index: null
